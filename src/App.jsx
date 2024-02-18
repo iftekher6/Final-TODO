@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`${server}/users/me`, {
+      .get(`${server}/users/userprofile`, {
         withCredentials: true,
       })
       .then((res) => {
